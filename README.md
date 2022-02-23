@@ -116,14 +116,14 @@ in mainly two ways.
 
 2. Admin can add, edit or delete the customer.
 
-  This addition is being done in the database as new customer is being created. First of all we are 
-  going to take all the parameters which are required to create a customer and store them in their 
-  respective variables, then this variables is being passed using mysqli_real_escape_string() method 
-  and connections will be made with the database using $conn. They will me stored in their respective 
-  php variables. After that we are going to use the ALTER command in the customer table of the 
-  database in order to increment each coloumn by 1. Then finally we are going to add these values 
-  using INSERT command into the customer table.
-  Subsequently we are going to create a new passbook table and a beneficiary table for this new customer too. 
+   This addition is being done in the database as new customer is being created. First of all we are 
+   going to take all the parameters which are required to create a customer and store them in their 
+   respective variables, then this variables is being passed using mysqli_real_escape_string() method 
+   and connections will be made with the database using $conn. They will me stored in their respective 
+   php variables. After that we are going to use the ALTER command in the customer table of the 
+   database in order to increment each coloumn by 1. Then finally we are going to add these values 
+   using INSERT command into the customer table.
+   Subsequently we are going to create a new passbook table and a beneficiary table for this new customer too. 
 
   
 3. Admin can also view the Transaction History of  every customer.

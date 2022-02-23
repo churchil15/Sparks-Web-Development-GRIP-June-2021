@@ -1,0 +1,82 @@
+@import url("fonts.css");
+
+.nav-wrapper {
+    height: 53px;
+    background: #333;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    background-color: #115566;
+    overflow: hidden;
+    height: 53px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Roboto-Bold;
+}
+
+.topnav a:hover {
+    color: white;
+    border-bottom: thick solid #18FFFF;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.navbar-fixed {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+@media screen and (max-width: 855px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .topnav.responsive {
+      position: relative;
+      height: auto;
+  }
+
+  .navbar-fixed.responsive {
+      top: 0;
+      z-index: 100;
+      position: fixed;
+      width: 99.15%;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive a:hover {
+    background-color: #EEEEEE;
+    color: #212121;
+    border-bottom: none;
+  }
+}
